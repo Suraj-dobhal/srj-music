@@ -1,0 +1,15 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/srjsongs",
+    "prod_uri": "mysql://root:@localhost/srjsongs",
+    "insta_url": "https://www.instagram.com/srj__99/",
+    "twitter_url": "https://twitter.com/SurajDobhal15/",
+    "blog_name":"Musical Soul",
+    "tag_line": "Music can heal the wounds that medicines cannot touch",
+    "gmail-user":"suraj.dobhal.07@gmail.com",
+    "gmail-password":"doraemonnobita"
+
+  }
+}

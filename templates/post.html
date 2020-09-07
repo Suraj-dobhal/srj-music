@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static' , filename='img/q.jpg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Hi , listen to how I sing</h1>
+            
+            <span class="meta">Posted by
+              <a href="#">SRJ</a>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div align="center"><h2>MY MUSIC</h2><br><br>
+  <audio controls="controls" autoplay="autoplay"></audio>
+  <ul>
+    {% for song in songs %}
+      <br>
+      <li><a href="javascript:void(0)" onclick="playsong('{{song}}')">{{song}}</a></li>
+    {% endfor %}
+  </ul>
+  </div>
+
+  <script type="text/javascript">
+    function playsong(song) {
+      $('audio').attr('src', '/static/music/'+song);
+    }
+  </script>
+
+ {% endblock %}
+  
